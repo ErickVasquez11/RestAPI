@@ -43,7 +43,7 @@ public class LibraryController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 		
-		Book bookFound = bookService.finfOneById(search.getIsbn());
+		Book bookFound = bookService.findOneById(search.getIsbn());
 		if(bookFound == null) {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}

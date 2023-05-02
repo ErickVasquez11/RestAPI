@@ -8,6 +8,6 @@ public interface BookService {
 	// find, finOnById, save, delete
 	void save(Book book);
 	void delete(String isbn);
-	Book finfOneById(String isbn);
+	Book findOneById(String isbn);
 	List<Book> findAll();
 }
